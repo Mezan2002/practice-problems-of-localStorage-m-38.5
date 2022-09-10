@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage 4</title>
+    <!-- cdn link of daisyUi start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- cdn link of daisyUi end -->
+    <!-- tailwind css link start -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css link end -->
+  </head>
+  <body>
+    <section class="mt-32 bg-black w-6/12 mx-auto p-32 rounded-2xl text-center">
+      <h2 class="text-4xl text-center mb-5 text-white">Contact Us</h2>
+      <div class="flex justify-center">
+        <!-- name field start -->
+        <div class="form-control">
+          <div class="flex align-items-center mb-5 px-5">
+            <label class="input-group">
+              <span>Name</span>
+              <input
+                type="text"
+                placeholder="your name"
+                class="input input-bordered w-full max-w-xs pr-24"
+                id="nameField"
+              />
+            </label>
+            <button onclick="deleteName()" class="ml-10 btn btn-error">
+              Delete
+            </button>
+            <button onclick="saveName()" class="ml-10 btn">Save</button>
+          </div>
+          <!-- name field end -->
+          <!-- email field start -->
+          <div class="flex align-items-center mb-5 px-5">
+            <label class="input-group">
+              <span>Email</span>
+              <input
+                type="email"
+                placeholder="your email address"
+                class="input input-bordered w-full max-w-xs pr-24"
+                id="emailField"
+              />
+            </label>
+            <button onclick="deleteEmail()" class="ml-10 btn btn-error">
+              Delete
+            </button>
+            <button onclick="saveEmail()" class="ml-10 btn">Save</button>
+          </div>
+          <!-- email field end -->
+          <!-- message field start -->
+          <div class="flex align-items-center mb-5 px-5">
+            <label class="input-group">
+              <span>Message</span>
+              <textarea
+                class="textarea textarea-bordered pr-24"
+                id="messageField"
+                placeholder="your message"
+              ></textarea>
+            </label>
+            <button onclick="deleteMessage()" class="ml-10 btn btn-error">
+              Delete
+            </button>
+            <button onclick="saveMessage()" class="ml-10 btn">Save</button>
+            <!-- message field end -->
+          </div>
+        </div>
+      </div>
+      <button onclick="sendAll()" class="btn btn-wide">Send</button>
+      <button onclick="resetAll()" class="btn btn-error btn-wide">Reset</button>
+    </section>
+    <script src="localStorageLevel4.js"></script>
+  </body>
+</html>

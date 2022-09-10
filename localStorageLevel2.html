@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage Level 2</title>
+    <!-- cdn link of daisyUi start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- cdn link of daisyUi end -->
+    <!-- tailwind css link start -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css link end -->
+  </head>
+  <body>
+    <section class="mt-24">
+      <div class="btn-group flex justify-center">
+        <button class="btn btn-info" onclick="decrementValue()">-</button>
+        <!-- <p class="text-center" type="text" id="number"</p> -->
+        <p class="px-10 py-3" type="text" id="number">0</p>
+        <button class="btn btn-info" onclick="incrementValue()">+</button>
+      </div>
+    </section>
+    <script src="localStorageLevel2.js"></script>
+  </body>
+</html>
